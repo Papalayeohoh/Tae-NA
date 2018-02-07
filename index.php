@@ -1,3 +1,3 @@
 ﻿<?php
-echo "Hello LINE BOT";
+echo "WELLCOME TO TAE NA";
 ?>
