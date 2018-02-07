@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
-					'text' => 'สวัสดีครัชช'
+					'text' => 'สวัสดีวัยรุ่น'
 				];
 			}
 			else if($text == 'test'){
@@ -28,7 +28,24 @@ if (!is_null($events['events'])) {
 					'text' => 'ทดสอบๆ'
 				];
 			}
-		
+		else if($text == 'love'){
+				// Build message to reply back
+				$messages = [
+					'type' => 'love',
+					'text' => 'ฉันก็รักเธอเหมือนกัน'
+				];
+			}
+			else if($text == 'ok'){
+				// Build message to reply back
+				$messages = [
+					'type' => 'ok',
+					'text' => 'ฉันรู้ว่าคุณต้องโอเคกับมัน'
+				];
+			}
+			
+			
+			
+			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
