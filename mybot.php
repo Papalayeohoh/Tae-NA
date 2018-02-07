@@ -31,14 +31,14 @@ if (!is_null($events['events'])) {
 		else if($text == 'love'){
 				// Build message to reply back
 				$messages = [
-					'type' => 'love',
+					'type' => 'text',
 					'text' => 'ฉันก็รักเธอเหมือนกัน'
 				];
 			}
 			else if($text == 'ok'){
 				// Build message to reply back
 				$messages = [
-					'type' => 'ok',
+					'type' => 'text',
 					'text' => 'ฉันรู้ว่าคุณต้องโอเคกับมัน'
 				];
 			}
